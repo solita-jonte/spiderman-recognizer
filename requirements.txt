@@ -1,5 +1,3 @@
-torch
-torchvision
-Pillow
+ultralytics
 google-api-python-client
 requests

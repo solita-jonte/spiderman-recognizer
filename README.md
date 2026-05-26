@@ -1,6 +1,6 @@
 # Spider-Man Recognizer
 
-A PyTorch implementation using transfer learning (ResNet-18) to determine if Spider-Man is in an image or not.
+Uses YOLOv8 classification (via Ultralytics) to determine if Spider-Man is in an image or not.
 
 ## Setup
 
@@ -29,7 +29,7 @@ python download_images.py
 python train.py
 ```
 
-This fine-tunes a pretrained ResNet-18 for binary classification. The best model is saved to `model/spiderman.pth`.
+This fine-tunes a pretrained YOLOv8 classification model. The best weights are saved to `model/spiderman.pt`.
 
 ## 3. Predict
 
@@ -52,7 +52,7 @@ Confidence: 94.32%
 ├── predict.py           # Run inference on a single image
 ├── requirements.txt     # Python dependencies
 ├── model/
-    └── spiderman.pth    # Trained model (generated)
+    └── spiderman.pt     # Trained model (generated)
 └── dataset/
     ├── train/
     │   ├── spiderman/
